@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="log-container">
+    <countby></countby>
+  </div>
+  <div class="buttons-container">
+    <increment></increment>
+    <form [formGroup]="form" (ngSubmit)="register()">
+      <input type="number" formControlName="valueData">
+      <button type="submit">Submit</button>
+    </form>
+    <decrement></decrement>
+  </div>
+</div>
